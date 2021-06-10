@@ -8,8 +8,8 @@ int XP, YP;
 scanf ("%d %d %d %d",&XE, &YE, &XD, &YD);
 scanf ("%d %d", &XP, &YP);
 // esse primeiro if representa o caso baso descrito no enunciado da questão 
-if (XE < XD || YE > YD) { 
-  if (XP >= XE || XP <= XD || YP >= YD || YP <= YE) {
+if (XE < XD && YE > YD) { 
+  if (XP >= XE && XP <= XD && YP >= YD && YP <= YE) {
       printf ("Dentro!");
     }
     else { printf ("Fora!");}
@@ -27,25 +27,25 @@ int XP, YP;
 scanf ("%d %d %d %d",&XE, &YE, &XD, &YD);
 scanf ("%d %d", &XP, &YP);
  
-if (XE < XD || YE > YD) { 
-  if (XP >= XE || XP <= XD || YP >= YD || YP <= YE) {
+if (XE < XD && YE > YD) { 
+  if (XP >= XE && XP <= XD && YP >= YD && YP <= YE) {
       printf ("Dentro!");
     }
     else { printf ("Fora!");}
 }
-else if (XE < XD || YE < YD) {
-    if (XP >= XE || XP <= XD || YP <= YD || YP >= YE) {
+else if (XE < XD && YE < YD) {
+    if (XP >= XE && XP <= XD && YP <= YD && YP >= YE) {
       printf ("Dentro!");
     }
     else {printf ("Fora!");}
 }
-else if (XE > XD || YE > YD) {
-    if (XP <= XE || XP >= XD || YP >= YD || YP <= YE) {printf ("Dentro!");
+else if (XE > XD && YE > YD) {
+    if (XP <= XE && XP >= XD && YP >= YD && YP <= YE) {printf ("Dentro!");
     }
     else {printf ("Fora!");}
 }
-else if (XE > XD || YE < YD) {
-    if (XP <= XE || XP >= XD || YP <= YD || YP >= YE) { printf ("Dentro!");
+else if (XE > XD && YE < YD) {
+    if (XP <= XE && XP >= XD && YP <= YD && YP >= YE) { printf ("Dentro!");
     }
     else {printf ("Fora!");}
 }
